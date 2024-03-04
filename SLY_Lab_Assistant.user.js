@@ -6,9 +6,9 @@
 // @author       SLY w/ Contributions by SkyLove512, anthonyra, niofox
 // @match        https://*.labs.staratlas.com/
 // @require      https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/anchor-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/buffer-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/bs58-browserified.js
+// @require      https://raw.githubusercontent.com/Palminator100/Test1/main/anchor-browserified.js
+// @require      https://raw.githubusercontent.com/Palminator100/Test1/main/buffer-browserified.js
+// @require      https://raw.githubusercontent.com/Palminator100/Test1/main/bs58-browserified.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=staratlas.com
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -31,18 +31,18 @@
 	const scanPauseTime = 600; //Number of seconds to wait when sectors probabilities are too low
 	const scanStrikeTime = 60; //Number of seconds to scan a low probability sector before giving up and moving on (or pausing)
 	const statusPanelOpacity = 0.75; //How transparent the status panel should be (1 = completely opaque)
-	const autoStartScript = false; //Should assistant automatically start after initialization is complete?
-	const reloadPageOnFailedFleets = 0; //How many fleets need to stall before triggering an automatic page reload? (0 = never trigger)
+	const autoStartScript = true; //Should assistant automatically start after initialization is complete?
+	const reloadPageOnFailedFleets = 1; //How many fleets need to stall before triggering an automatic page reload? (0 = never trigger)
 
 	//Used for reading solana data
 	let readRPCs = [
-		'https://rpc.hellomoon.io/cfd5910f-fb7d-4489-9b32-f97193eceefd',
+		'https://rpc.hellomoon.io/12a1932f-f069-49a7-ad44-4ca8148149d6',
 		'https://solana-api.syndica.io/access-token/WPoEqWQ2auQQY1zHRNGJyRBkvfOLqw58FqYucdYtmy8q9Z84MBWwqtfVf8jKhcFh/rpc',
 	];
 
 	//Used for pushing transactions to solana chain
 	let writeRPCs = [
-		'https://rpc.hellomoon.io/cfd5910f-fb7d-4489-9b32-f97193eceefd',
+		'https://rpc.hellomoon.io/12a1932f-f069-49a7-ad44-4ca8148149d6',
 		'https://solana-api.syndica.io/access-token/WPoEqWQ2auQQY1zHRNGJyRBkvfOLqw58FqYucdYtmy8q9Z84MBWwqtfVf8jKhcFh/rpc',
 	];
 
